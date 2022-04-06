@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Score-Line";
+    src:url('Score-Line.woff2') format("woff2"),url('Score-Line.woff') format("woff");
+    font-weight:500;
+    font-style:normal;
+}
+
+body {
+    color: #000000;
+    background-color: #ffffff;
+    overflow-y: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.content {
+    width: 100%;
+    display: inline-block;
+    height: 100vh;
+    margin: 0vw;
+    overflow: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.title_wrap {
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    height: 2.6vh;
+    font-family: "Score-Line";
+    color: #FFFFFF;
+    font-size: 2.1vh;
+    line-height: 2.6vh;
+    letter-spacing: 0.00vh;
+    text-align: left;
+    background-color: #000000;
+    justify-content: space-between;
+    padding: 1px 10px 1px 1px;
+    z-index: 999;
+}
+
+.title_wrap:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    color: #FFFFFF;
+    font-family: "Score-Line";
+    font-size: 2.1vh;
+    line-height: 1vh;
+    letter-spacing: 0.00vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 16.6vw 16.6vw 16.6vw 49.8vw;
+    grid-gap: 0px;
+    margin-left: 0vh;
+    margin-right: 0vh;
+    margin-bottom: 0vh; /*new*/
+    color: #000000;
+    font-family: "Score-Line";
+    font-size: 2.1vh;
+    line-height: 2.6vh;
+    letter-spacing: 0.00vh;
+    text-align: left;
+}
+
+.container > div {
+  text-align: left;
+}
+
+.container:hover {
+  color: #ffffff;
+  text-decoration: #ffffff;
+  background-color: #000000;
+}
+
+#index {
+  margin-top: 2.6vh;
+  margin-bottom: 0vh;
+}
+
+.main .index_entry:hover {
+  cursor: pointer;
+}
+
+.index_drawer {
+  color: #000000;
+  overflow-y: hidden;
+  transition-property: all;
+  transition-duration: .3s;
+  height: 100%
+}
+
+.index_drawer a {
+  color: #000000;
+}
+
+.index_drawer a:hover {
+  color: #000000;
+}
+
+.index_drawer .index_content {
+    display: grid;
+    grid-template-columns: 0% 0% 100% 0%;
+    grid-gap: 0px;
+    margin-right: 0vw;
+    margin-bottom: 0vh; /*new*/
+    font-family: "Score-Line";
+    font-size: 1.7vh;
+    line-height: 2.6vh;
+    letter-spacing: 0.00vh;
+    color: #ffffff;
+    background-color: #000000;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.index_drawer.closed {
+  max-height: 0;
+}
+
+/* unvisited link */
+a:link {
+  color: #000000;
+}
+
+/* visited link */
+a:visited {
+  color: #000000;
+}
+
+/* video play */
+.hoverVid  {
+  position: relative;
+}
+
+.hoverVid video {
+  position: fixed;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  /* "hidden" and prepared animation state*/
+  transition: 2s;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hoverVid:hover video {
+  /* on hover, animate into view */
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0px);
+  mix-blend-mode: normal;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #000000;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 0px;
+}
+
+.image-4 {
+    position: static;
+    z-index: -200;
+    width: 100%;
+    max-width: none;
+    margin-top: 1.396vw;
+    margin-bottom: 1.453vw;
+    padding-bottom: 0;
+    -o-object-fit: fill;
+    object-fit: fill;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+
+  body, html {
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+.title_wrap {
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    height: 2.6vh;
+    font-family: "Score-Line";
+    color: #FFFFFF;
+    font-size: 2.1vh;
+    line-height: 2.6vh;
+    letter-spacing: 0.00vh;
+    text-align: left;
+    background-color: #000000;
+    justify-content: space-between;
+    padding: 1px 10px 1px 1px;
+    z-index: 999;
+}
+
+.title_wrap:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    color: #FFFFFF;
+    font-family: "Score-Line";
+    font-size: 2.1vh;
+    line-height: 1vh;
+    letter-spacing: 0.00vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+}
+
+  .content {
+    width: 100% !important;
+    height: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 8.3vw 8.3vw 8.3vw 75.1vw;
+    grid-gap: 2.2vw;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0vh; /*new*/
+    text-align: left;
+  }
+
+  .container > div {
+    font-size: 1.7vh;
+    line-height: 2.6vh;
+    letter-spacing: 0.00vh;
+    text-align: left;
+  }
+
+#index {
+  margin-top: 2.6vh;
+  margin-bottom: 0vh;
+}
+
+  .index_drawer .index_content {
+    font-size: 1.7vh;
+    line-height: 2.6vh;
+    letter-spacing: 0.00vh;
+    text-align: left;
+    margin: 0;
+  }
+
+}
