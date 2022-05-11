@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 </head>
@@ -15,17 +15,30 @@
 <!--body-->
 <body>
 <div class="content">
+
+    <div id="intro">
+        <div class="title">The scores for <i>Sound, Island, Departure, …</i> are preceding by Yuseon Park<br>
+        Dear Friends, will you read my recording scores?<br>
+        Readers should read from this score. Every lyric is played as hovering cursor on lyric; Every metadata of the recording is hided under the lyric. To read with more voices, readers should use the Two or more voices button.
+I was drawn to the varying relation between instruction and score, and the tones of instructional address. </div>
+        <div class="x_button">×</div>
+    </div>
+    <script>
+        $('#intro').find('.x_button').click(function() {
+            $('#intro').hide()
+        })
+    </script>
+    
 <header>
     <div class="title_wrap">
-        <button class="button" href="file:///Users/parkyuseon/Documents/GitHub/a-recording-score/index.html#top" rel="home">A Recording Score</button>
-        <button class="button" href="#top">↑Top</button>
-        <button class="button" id="random"   onclick="randomizeContent('content_group')">Two or more voices</button>
+        <li><a href="https://www.w3schools.com/html/">&nbsp;A Recording Score</a></li>
+        <li><a href="#top">↑Top</a></li>
+        <li></li><button class="button" id="random" onclick="randomizeContent('content_group')">Two or more voices&nbsp;&nbsp;</button></li>
     </div>
+    <a name="top"></a>
 </header>
 
-
 <div id="index" class="main">
-    <a name="top"></a>
     <!--(category) -->
     <div class="index_entry arrows container">
     </div>
@@ -34,9 +47,9 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>1</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>01:06</sup></div>
+            <div class="row1">&nbsp;1</div>
+            <div class="row2">Em</div>
+            <div class="row3">01:06</div>
             <div class="hoverVid">
                 There are the memories. I don't know what else to call them.
                 <video loop autoplay src="media/audio/1_IMG_4824.mp4"></video>
@@ -45,9 +58,9 @@
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 1:31 AM on December 25, 2021. A sound having a size of 374,822,486 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -57,9 +70,9 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>2</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>02:25</sup></div>
+            <div class="row1">&nbsp;2</div>
+            <div class="row2">Em</div>
+            <div class="row3">02:25</div>
             <div class="hoverVid">
                 I’m always on the ceaseless movement.
                 <video loop autoplay src="media/audio/2_IMG_6181.mp4"></video>
@@ -68,9 +81,9 @@
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -80,9 +93,9 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>3</sup></div>
-            <div class="row2"><sup>G#m</sup></div>
-            <div class="row3"><sup>00:34</sup></div>
+            <div class="row1">&nbsp;3</div>
+            <div class="row2">G#m</div>
+            <div class="row3">00:34</div>
             <div class="hoverVid">
                 and it left me with memories, including weather,
                 <video loop autoplay src="media/audio/3_IMG_8101.mp4"></video>
@@ -91,9 +104,9 @@
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on March 20, 2017. A sound having a size of 18,539,186 bytes bytes in the mono channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -103,20 +116,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>4</sup></div>
-            <div class="row2"><sup>Gm</sup></div>
-            <div class="row3"><sup>00:13</sup></div>
+            <div class="row1">&nbsp;4</div>
+            <div class="row2">Gm</div>
+            <div class="row3">00:13</div>
             <div class="hoverVid">
                 light, time, friends, papers,
-                <video loop autoplay src="media/audio/4_IMG08916.mp4"></video>
+                <video loop autoplay src="media/audio/4_IMG_8916.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 4:02 PM on October 06, 2015. A sound having a size of6,873,905 bytes in the mono channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -126,20 +139,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>5</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:18</sup></div>
+            <div class="row1">&nbsp;5</div>
+            <div class="row2">Bm</div>
+            <div class="row3">00:18</div>
             <div class="hoverVid">
-                and animals. My colleague brought an orphaned cat we met on an island I was business traveling with.
-                <video loop autoplay src="media/audio/5_IMG00024.mp4"></video>
+                and animals. My colleague lives with a cat we met on an island I was business traveling with.
+                <video loop autoplay src="media/audio/5_IMG_0024.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 12:44 PM on July 9, 2019. A sound having a size of 39,254,157 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -149,9 +162,9 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>6</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:03</sup></div>
+            <div class="row1">&nbsp;6</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:03</div>
             <div class="hoverVid">
                 I imagined floating in the air even when I was at my desk.
                 <video loop autoplay src="media/audio/6_IMG_6332.mp4"></video>
@@ -160,9 +173,9 @@
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 4:32 PM on January 31, 2018. A sound having a size of 5,678,380 bytes in the mono channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -172,20 +185,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>7</sup></div>
-            <div class="row2"><sup>Am</sup></div>
-            <div class="row3"><sup>00:05</sup></div>
+            <div class="row1">&nbsp;7</div>
+            <div class="row2">D#m</div>
+            <div class="row3">00:22</div>
             <div class="hoverVid">
-                It was like some sort of challenge. But at night, I was lucky enough to meet other creatures.
-                <video loop autoplay src="media/audio/7_IMG03719.mp4"></video>
+                (Follow)
+                <video loop autoplay src="media/audio/7_DJI020210917015510605300video.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 1:55 PM on September 17, 2021. A sound having a size of 11,908,598 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -195,20 +208,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>8</sup></div>
-            <div class="row2"><sup>AM</sup></div>
-            <div class="row3"><sup>00:10</sup></div>
+            <div class="row1">&nbsp;8</div>
+            <div class="row2">F#m</div>
+            <div class="row3">00:20</div>
             <div class="hoverVid">
-                From the time before, I was walking all around the island, and all the songs, cats, breeze from the sea, and people were looking at the horizontal line of the island.
-                <video loop autoplay src="media/audio/8_IMG_9414.mp4"></video>
+                Sometimes, I lost my way.
+                <video loop autoplay src="media/audio/8_IMG_5128.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 9:39 AM on July 25, 2017. A sound having a size of 20,412,338 bytes in the mono channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -218,20 +231,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>9</sup></div>
-            <div class="row2"><sup>F#m</sup></div>
-            <div class="row3"><sup>00:14</sup></div>
+            <div class="row1">&nbsp;9</div>
+            <div class="row2">Dm</div>
+            <div class="row3">00:15</div>
             <div class="hoverVid">
-                Everybody is walking around the island. The circumference of the lowest island in Korea is only 4.2 km.
-                <video loop autoplay src="media/audio/9_IMG_9392.mp4"></video>
+                like this.
+                <video loop autoplay src="media/audio/9_IMG_2586.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 26,650,778 bytes in the mono channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -241,20 +254,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>10</sup></div>
-            <div class="row2"><sup>D#m</sup></div>
-            <div class="row3"><sup>00:22</sup></div>
+            <div class="row1">&nbsp;10</div>
+            <div class="row2">Dm</div>
+            <div class="row3">00:22</div>
             <div class="hoverVid">
-                (Follow the stairs down the stairs.)
-                <video loop autoplay src="media/audio/10_DJI020210917015510605300video.mp4"></video>
+                Soundscape in the refrigerator. Ice is freezing.
+                <video loop autoplay src="media/audio/10_IMG_0418.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 10:38 AM on February 12, 2022. A sound having a size of 61,591,926 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -264,20 +277,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>11</sup></div>
-            <div class="row2"><sup>F#m</sup></div>
-            <div class="row3"><sup>00:20</sup></div>
+            <div class="row1">&nbsp;11</div>
+            <div class="row2">Gm</div>
+            <div class="row3">00:05</div>
             <div class="hoverVid">
-                Sometimes, I lost my way. Not sometimes, but often,
-                <video loop autoplay src="media/audio/11_IMG05128.mp4"></video>
+                We were lying under an apple tree in the scorching sun. I want to be close to the land and marks.
+                <video loop autoplay src="media/audio/11_IMG_8540.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 26,358,101 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -287,20 +300,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>12</sup></div>
-            <div class="row2"><sup>Dm</sup></div>
-            <div class="row3"><sup>00:15</sup></div>
+            <div class="row1">&nbsp;12</div>
+            <div class="row2">Dm</div>
+            <div class="row3">00:15</div>
             <div class="hoverVid">
-                like this.
-                <video loop autoplay src="media/audio/12_IMG_2586.mp4"></video>
+                Painting on paper seemed to become a floating island. By painting with strangers and unfamiliar things, I became closer to the real world.
+                <video loop autoplay src="media/audio/12_IMG_3269.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 9:41 AM on January 10, 2014. A sound having a size of 3,111,640 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -310,20 +323,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>13</sup></div>
-            <div class="row2"><sup>Dm</sup></div>
-            <div class="row3"><sup>00:32</sup></div>
+            <div class="row1">&nbsp;13</div>
+            <div class="row2">F#m</div>
+            <div class="row3">00:10</div>
             <div class="hoverVid">
-                Soundscape in the refrigerator. Ice is freezing.
-                <video loop autoplay src="media/audio/13_IMG_0418.mp4"></video>
+                It was an uncertain summer.
+                <video loop autoplay src="media/audio/13_IMG_0499.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -333,20 +346,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>14</sup></div>
-            <div class="row2"><sup>Dm</sup></div>
-            <div class="row3"><sup>00:15</sup></div>
+            <div class="row1">&nbsp;14</div>
+            <div class="row2">G#m</div>
+            <div class="row3">00:29</div>
             <div class="hoverVid">
-                Microscopic substances in the moist atmosphere, including water vapor, act as the nuclei that form the snow. As the water vapor adhering to the microscopic core freezes, it becomes snow grains, and the surrounding water vapor continues to stick to the crystals.
-                <video loop autoplay src="media/audio/14_IMG_3269.mp4"></video>
+                The weather, perpetually changing, sent blue and purple clouds flying over the city. 
+                <video loop autoplay src="media/audio/14_IMG_5556.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -356,20 +369,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>15</sup></div>
-            <div class="row2"><sup>F#m</sup></div>
-            <div class="row3"><sup>00:08</sup></div>
+            <div class="row1">&nbsp;15</div>
+            <div class="row2">A</div>
+            <div class="row3">00:42</div>
             <div class="hoverVid">
-                I used not to like these falling crystals.
-                <video loop autoplay src="media/audio/15_IMG03667.mp4"></video>
+                The city revealed its existence with high and low sounds.
+                <video loop autoplay src="media/audio/15_IMG_7687.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 10:17 PM on November 20, 2017. A sound having a size of 19,950,031 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -379,20 +392,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>16</sup></div>
-            <div class="row2"><sup>Gm</sup></div>
-            <div class="row3"><sup>00:05</sup></div>
+            <div class="row1">&nbsp;16</div>
+            <div class="row2">Gm</div>
+            <div class="row3">00:24</div>
             <div class="hoverVid">
-                The bus I took on a snowy day slipped.
-                <video loop autoplay src="media/audio/16_IMG_3696.mp4"></video>
+                A sudden rain struck the pavement. 
+                <video loop autoplay src="media/audio/16_IMG_0914.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -402,20 +415,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>17</sup></div>
-            <div class="row2"><sup>G#m</sup></div>
-            <div class="row3"><sup>00:19</sup></div>
+            <div class="row1">&nbsp;17</div>
+            <div class="row2">Bm</div>
+            <div class="row3">00:09</div>
             <div class="hoverVid">
-                Falling snow can be seen vertically,
-                <video loop autoplay src="media/audio/17_IMG_3183.mp4"></video>
+                I got a ticket to an island with a sun, comet, sky, and things; for business travel. It is small and it is the lowest island with lots of waves.
+                <video loop autoplay src="media/audio/17_IMG_3024.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -425,21 +438,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>18</sup></div>
-            <div class="row2"><sup>G#m</sup></div>
-            <div class="row3"><sup>00:06</sup></div>
+            <div class="row1">&nbsp;18</div>
+            <div class="row2">Bm</div>
+            <div class="row3">00:13</div>
             <div class="hoverVid">
-                and it can be viewed horizontally.
-                <video loop autoplay src="media/audio/18_IMG04571.mp4"></video>
+                My body, floating in the city, came closer to the waves, the water, and the ground.
+                <video loop autoplay src="media/audio/18_IMG_9390.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -449,20 +462,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>19</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:09</sup></div>
+            <div class="row1">&nbsp;19</div>
+            <div class="row2">Gm</div>
+            <div class="row3">00:09</div>
             <div class="hoverVid">
-                The crystals resemble the flowers of fireworks. The road to my grandmother’s hospital was shone with countless brightly colored crystals.
-                <video loop autoplay src="media/audio/19_IMG03024.mp4"></video>
+                The island was divided horizontally into two colors.
+                <video loop autoplay src="media/audio/19_IMG_0502.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -472,20 +485,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>20</sup></div>
-            <div class="row2"><sup>G#m</sup></div>
-            <div class="row3"><sup>00:29</sup></div>
+            <div class="row1">&nbsp;20</div>
+            <div class="row2">D#m</div>
+            <div class="row3">00:12</div>
             <div class="hoverVid">
-                About 45 degrees, centrifugal force is the force acting outward on an object in a circular motion.
-                <video loop autoplay src="media/audio/20_IMG_5556.mp4"></video>
+                The lower half is green, and the other half is in the sky.
+                <video loop autoplay src="media/audio/20_IMG_5822.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -493,45 +506,45 @@
 
     <!-- 21 -->
     <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>21</sup></div>
-            <div class="row2"><sup>Am</sup></div>
-            <div class="row3"><sup>00:31</sup></div>
-            <div class="hoverVid">
-                So as not to go outside the circle,
-                <video loop autoplay src="media/audio/21_IMG_5644.mp4"></video>
+        <div class="index_entry" onclick="openAndClose_drawer(this)">
+            <div class="container">
+                <div class="row1">&nbsp;21</div>
+                <div class="row2">Em</div>
+                <div class="row3">00:29</div>
+                <div class="hoverVid">
+                    Inside the green, the sounds of birds resounded, and the soil under your feet came alive.
+                    <video loop autoplay src="media/audio/21_IMG_0514.mp4"></video>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
+        <div class="index_drawer closed">
+            <div class="index_content">
+                <div class="row1">&nbsp;</div>
+                <div class="row2"></div>
+                <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
+                <div class="row4"></div>
+            </div>
         </div>
-    </div>
-    </div>
+        </div>
 
     <!-- 22 -->
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>22</sup></div>
-            <div class="row2"><sup>A</sup></div>
-            <div class="row3"><sup>00:42</sup></div>
+            <div class="row1">&nbsp;22</div>
+            <div class="row2">A</div>
+            <div class="row3">00:14</div>
             <div class="hoverVid">
-                move,
-                <video loop autoplay src="media/audio/22_2022-03-31.mp4"></video>
+                People were looking at the horizontal line of the island. 
+                <video loop autoplay src="media/audio/22_IMG_9392.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -541,20 +554,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>23</sup></div>
-            <div class="row2"><sup>D</sup></div>
-            <div class="row3"><sup>01:09</sup></div>
+            <div class="row1">&nbsp;23</div>
+            <div class="row2">F#m</div>
+            <div class="row3">00:14</div>
             <div class="hoverVid">
-                Small circles become large circles.
-                <video loop autoplay src="media/audio/23_IMG_9174.mp4"></video>
+                I was walking all around the island.
+                <video loop autoplay src="media/audio/23_IMG_9395.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -564,20 +577,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>24</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:45</sup></div>
+            <div class="row1">&nbsp;24</div>
+            <div class="row2">Am</div>
+            <div class="row3">00:10</div>
             <div class="hoverVid">
-                The color of the circle changes constantly. I got a ticket to a gallery with sun, comet, sky, and things.
-                <video loop autoplay src="media/audio/24_IMG_0174.mp4"></video>
+                All the songs, cats, and breeze from the sea.
+                <video loop autoplay src="media/audio/24_IMG_9414.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -587,20 +600,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>25</sup></div>
-            <div class="row2"><sup>Gm</sup></div>
-            <div class="row3"><sup>02:26</sup></div>
+            <div class="row1">&nbsp;25</div>
+            <div class="row2">Am</div>
+            <div class="row3">00:05</div>
             <div class="hoverVid">
-                Sometimes the sea divides the circle in half. For the first time in my life, I went to the East Sea to see the sunrise. The sun came up at exactly 5 o’clock.
-                <video loop autoplay src="media/audio/25_IMG_1089.mp4"></video>
+                At night, I was lucky enough to meet other creatures.
+                <video loop autoplay src="media/audio/25_IMG_3719.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -610,20 +623,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>26</sup></div>
-            <div class="row2"><sup>Gm</sup></div>
-            <div class="row3"><sup>00:09</sup></div>
+            <div class="row1">&nbsp;26</div>
+            <div class="row2">Gm</div>
+            <div class="row3">00:31</div>
             <div class="hoverVid">
-                And half of it in the sky.
-                <video loop autoplay src="media/audio/26_IMG_0502.mp4"></video>
+                For a moment, I looked down at the scenery spread out below; I was thinking about the island. 
+                <video loop autoplay src="media/audio/26_IMG_3239.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 7:35 PM on October 8, 2019. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -633,20 +646,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>27</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:06</sup></div>
+            <div class="row1">&nbsp;27</div>
+            <div class="row2">Bm</div>
+            <div class="row3">00:21</div>
             <div class="hoverVid">
-                The half-half spheres thus divided are always captured in my a-piece sky.
-                <video loop autoplay src="media/audio/27_IMG_0456.mp4"></video>
+                I am looking at the point between the sky and the earth. On that line, the sun rises, and the stars set. (Flickering, Fade to black)
+                <video loop autoplay src="media/audio/27_IMG_7537.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -656,20 +669,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>28</sup></div>
-            <div class="row2"><sup>Gm</sup></div>
-            <div class="row3"><sup>00:10</sup></div>
+            <div class="row1">&nbsp;28</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:08</div>
             <div class="hoverVid">
-                The shape of a piece of sky is sometimes triangular, trapezoidal, square, or polygonal.
-                <video loop autoplay src="media/audio/28_IMG_3483.mp4"></video>
+                When I arrived, it was a summer day here.
+                <video loop autoplay src="media/audio/28_IMG_0508.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -679,20 +692,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>29</sup></div>
-            <div class="row2"><sup>Am</sup></div>
-            <div class="row3"><sup>00:24</sup></div>
+            <div class="row1">&nbsp;29</div>
+            <div class="row2">Dm</div>
+            <div class="row3">00:07</div>
             <div class="hoverVid">
-                And that ratio is largely one of them. In that case, I’m closer to one of the two.
-                <video loop autoplay src="media/audio/29_IMG_6555.mp4"></video>
+                The streets are full of strange sounds.
+                <video loop autoplay src="media/audio/29_IMG_4275.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -702,20 +715,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>30</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>01:03</sup></div>
+            <div class="row1">&nbsp;30</div>
+            <div class="row2">Am</div>
+            <div class="row3">00:24</div>
             <div class="hoverVid">
-                closely,
-                <video loop autoplay src="media/audio/30_IMG_0471.mp4"></video>
+                The moment I listened to the loudest song
+                <video loop autoplay src="media/audio/30_IMG_6555.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -725,20 +738,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>31</sup></div>
-            <div class="row2"><sup>D</sup></div>
-            <div class="row3"><sup>01:22</sup></div>
+            <div class="row1">&nbsp;31</div>
+            <div class="row2">Gm</div>
+            <div class="row3">02:26</div>
             <div class="hoverVid">
-                Touch also means that the distance between the object and me has narrowed.
-                <video loop autoplay src="media/audio/31_IMG_9281.mp4"></video>
+                The sounds I used to hate are slowly disappearing from my mind. 
+                <video loop autoplay src="media/audio/31_IMG_1089.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -748,20 +761,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>32</sup></div>
-            <div class="row2"><sup>Gm</sup></div>
-            <div class="row3"><sup>01:25</sup></div>
+            <div class="row1">&nbsp;32</div>
+            <div class="row2">Gm</div>
+            <div class="row3">00:15</div>
             <div class="hoverVid">
-                I was thinking about my friends and how much I love them and the sounds, the yelling and the singing and the stories, how you tell the stories, sometimes almost a whisper, sometimes louder, until you get it right.
-                <video loop autoplay src="media/audio/32_IMG_9239.mp4"></video>
+                Song, 
+                <video loop autoplay src="media/audio/32_IMG_3207.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -771,20 +784,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>33</sup></div>
-            <div class="row2"><sup>G</sup></div>
-            <div class="row3"><sup>01:18</sup></div>
+            <div class="row1">&nbsp;33</div>
+            <div class="row2">G</div>
+            <div class="row3">00:11</div>
             <div class="hoverVid">
-                The song itself is full of irreversibility.
-                <video loop autoplay src="media/audio/33_IMG648.mp4"></video>
+                Park, 
+                <video loop autoplay src="media/audio/33_IMG_0924.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -794,20 +807,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>34</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>01:04</sup></div>
+            <div class="row1">&nbsp;34</div>
+            <div class="row2">Bm</div>
+            <div class="row3">00:13</div>
             <div class="hoverVid">
-                September 2021 was like a sabbatical for me, who had been immersed in hard work.
-                <video loop autoplay src="media/audio/34_IMG_9122.mp4"></video>
+                Road, 
+                <video loop autoplay src="media/audio/34_IMG_0435.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -817,20 +830,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>35</sup></div>
-            <div class="row2"><sup>Gm</sup></div>
-            <div class="row3"><sup>00:08</sup></div>
+            <div class="row1">&nbsp;35</div>
+            <div class="row2">Gm</div>
+            <div class="row3">00:32</div>
             <div class="hoverVid">
-                I faced the pouring papers every week.
-                <video loop autoplay src="media/audio/35_IMG_0869.mp4"></video>
+                Shapes, 
+                <video loop autoplay src="media/audio/35_IMG_7447.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -840,20 +853,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>36</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:11</sup></div>
+            <div class="row1">&nbsp;36</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:33</div>
             <div class="hoverVid">
-                It was unpredictable as 2’s not 3’s, 6’s followed by 5’s,
-                <video loop autoplay src="media/audio/36_IMG_9848.mp4"></video>
+                Weather, 
+                <video loop autoplay src="media/audio/36_IMG_3194.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -863,20 +876,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>37</sup></div>
-            <div class="row2"><sup>Gm</sup></div>
-            <div class="row3"><sup>00:14</sup></div>
+            <div class="row1">&nbsp;37</div>
+            <div class="row2">Gm</div>
+            <div class="row3">01:04</div>
             <div class="hoverVid">
-                The sound is sometimes regular.
-                <video loop autoplay src="media/audio/37_IMG_9316.mp4"></video>
+                and the birds. 
+                <video loop autoplay src="media/audio/37_IMG_9122.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -886,21 +899,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>38</sup></div>
-            <div class="row2"><sup>B</sup></div>
-            <div class="row3"><sup>04:37</sup></div>
+            <div class="row1">&nbsp;38</div>
+            <div class="row2">Gm</div>
+            <div class="row3">01:25</div>
             <div class="hoverVid">
-                Exploring the surface at different magnifications gives you a different sense of speed.
-                <video loop autoplay src="media/audio/38_IMG_0217.mp4"></video>
+                I was thinking about my friends and how much I love them and the sounds, 
+                <video loop autoplay src="media/audio/38_IMG_9239.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -910,20 +923,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>39</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:13</sup></div>
+            <div class="row1">&nbsp;39</div>
+            <div class="row2">G</div>
+            <div class="row3">01:18</div>
             <div class="hoverVid">
-                The speed of the ship above the sea surface
-                <video loop autoplay src="media/audio/39_IMG_9390.mp4"></video>
+                the singing and the stories, 
+                <video loop autoplay src="media/audio/39_IMG_0648.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -933,21 +946,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>40</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:09</sup></div>
+            <div class="row1">&nbsp;40</div>
+            <div class="row2">C#m</div>
+            <div class="row3">00:11</div>
             <div class="hoverVid">
-                The speed at which the crab walks
-                <video loop autoplay src="media/audio/40_IMG_2316.mp4"></video>
+                how you tell the stories, 
+                <video loop autoplay src="media/audio/40_IMG_0654.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -957,20 +970,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>41</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:15</sup></div>
+            <div class="row1">&nbsp;41</div>
+            <div class="row2">Bm</div>
+            <div class="row3">00:15</div>
             <div class="hoverVid">
-                Last trip before departure. The sound of the leaves of the bamboo in front of the beach hitting the sea breeze.
+                sometimes almost a whisper, 
                 <video loop autoplay src="media/audio/41_IMG_2347.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -980,20 +993,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>42</sup></div>
-            <div class="row2"><sup>G#m</sup></div>
-            <div class="row3"><sup>01:33</sup></div>
+            <div class="row1">&nbsp;42</div>
+            <div class="row2">G</div>
+            <div class="row3">01:05</div>
             <div class="hoverVid">
-                I was born in Seoul and have lived here for a long time.
-                <video loop autoplay src="media/audio/42_IMG_7152.mp4"></video>
+                sometimes louder, 
+                <video loop autoplay src="media/audio/42_IMG_5399.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1003,20 +1016,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>43</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:06</sup></div>
+            <div class="row1">&nbsp;43</div>
+            <div class="row2">Gm</div>
+            <div class="row3">00:14</div>
             <div class="hoverVid">
-                At the push of a button, the spaceship actually launched people into space. [boosters firing] Twin solid rocket boosters produce a combined thrust of over five million pounds for liftoff. Two minutes later, the solid boosters will burn out, separate from the external tank.
-                <video loop autoplay src="media/audio/43_I7A7463.mp4"></video>
+                sometimes regular,
+                <video loop autoplay src="media/audio/43_IMG_9848.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1026,20 +1039,20 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>44</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:15</sup></div>
+            <div class="row1">&nbsp;44</div>
+            <div class="row2">Gm</div>
+            <div class="row3">00:08</div>
             <div class="hoverVid">
-                I have to leave the city soon.
-                <video loop autoplay src="media/audio/44_IMG_2440.mp4"></video>
+                pouring papers sounds,
+                <video loop autoplay src="media/audio/44_IMG_0869.mp4"></video>
             </div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1049,21 +1062,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>45</sup></div>
-            <div class="row2"><sup>D#m</sup></div>
-            <div class="row3"><sup>00:10</sup></div>
+            <div class="row1">&nbsp;45</div>
+            <div class="row2">G#m</div>
+            <div class="row3">00:12</div>
             <div class="hoverVid">
-                I turn on my car’s blinkers, and now I’m about to move to another lane.
-                <video loop autoplay src="media/audio/45_IMG_0499.mp4"></video>
+                I didn’t bring any sounds.
+                <video loop autoplay src="media/audio/45_IMG_5263.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1073,9 +1086,9 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>46</sup></div>
-            <div class="row2"><sup>Fm</sup></div>
-            <div class="row3"><sup>00:03</sup></div>
+            <div class="row1">&nbsp;46</div>
+            <div class="row2">Fm</div>
+            <div class="row3">00:03</div>
             <div class="hoverVid">
                 He was here.
                 <video loop autoplay src="media/audio/46_IMG_5035.mp4"></video>
@@ -1085,9 +1098,9 @@
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1097,21 +1110,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>47</sup></div>
-            <div class="row2"><sup>G</sup></div>
-            <div class="row3"><sup>00:06</sup></div>
+            <div class="row1">&nbsp;47</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:05</div>
             <div class="hoverVid">
-                I decided to buy a bike.
-                <video loop autoplay src="media/audio/47_IMG_4006.mp4"></video>
+                Many of these sounds remain, and I have left.
+                <video loop autoplay src="media/audio/47_IMG_8711.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1121,21 +1134,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>48</sup></div>
-            <div class="row2"><sup>F#m</sup></div>
-            <div class="row3"><sup>00:03</sup></div>
+            <div class="row1">&nbsp;48</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:17</div>
             <div class="hoverVid">
-                Waiting for a traffic light.
-                <video loop autoplay src="media/audio/48_IMG_6329.mp4"></video>
+                All sounds remain as marks.
+                <video loop autoplay src="media/audio/48_IMG_6915.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1145,21 +1158,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>49</sup></div>
-            <div class="row2"><sup>G#m</sup></div>
-            <div class="row3"><sup>00:12</sup></div>
+            <div class="row1">&nbsp;49</div>
+            <div class="row2">C#m</div>
+            <div class="row3">01:58</div>
             <div class="hoverVid">
-                By the time they return home, the city turns pink.
-                <video loop autoplay src="media/audio/49_IMG_5263.mp4"></video>
+                Water has marks. 
+                <video loop autoplay src="media/audio/49_L1060002.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1169,21 +1182,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>50</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:11</sup></div>
+            <div class="row1">&nbsp;50</div>
+            <div class="row2">A#m</div>
+            <div class="row3">00:06</div>
             <div class="hoverVid">
-                The light moves.
-                <video loop autoplay src="media/audio/50_IMG_5264.mp4"></video>
+                Functional equations create graphs.
+                <video loop autoplay src="media/audio/50_IMG_6934.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1193,21 +1206,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>51</sup></div>
-            <div class="row2"><sup>D#m</sup></div>
-            <div class="row3"><sup>00:12</sup></div>
+            <div class="row1">&nbsp;51</div>
+            <div class="row2">Fm</div>
+            <div class="row3">00:20</div>
             <div class="hoverVid">
-                The movement of the wind is also visible.
-                <video loop autoplay src="media/audio/51_IMG_5822.mp4"></video>
+                It was unpredictable as 2’s not 3’s, 6’s followed by 5’s.
+                <video loop autoplay src="media/audio/51_IMG_0456.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1217,21 +1230,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>52</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:07</sup></div>
+            <div class="row1">&nbsp;52</div>
+            <div class="row2">Bm</div>
+            <div class="row3">00:14</div>
             <div class="hoverVid">
-                Slow movement ...
-                <video loop autoplay src="media/audio/52_IMG_0414.mp4"></video>
+                Episode 15 of the drama was like my 20s.
+                <video loop autoplay src="media/audio/52_IMG_0339.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1241,21 +1254,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>53</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:14</sup></div>
+            <div class="row1">&nbsp;53</div>
+            <div class="row2">D</div>
+            <div class="row3">01:09</div>
             <div class="hoverVid">
-                I got a car license, also read the cookbook.
-                <video loop autoplay src="media/audio/53_IMG339.mp4"></video>
+                Small circles become large circles.
+                <video loop autoplay src="media/audio/53_IMG_9174.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1265,21 +1278,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>54</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:13</sup></div>
+            <div class="row1">&nbsp;54</div>
+            <div class="row2">Bm</div>
+            <div class="row3">00:06</div>
             <div class="hoverVid">
-                🚲
-                <video loop autoplay src="media/audio/54_IMG_0435.mp4"></video>
+                I don’t care about the crack. I don’t want to fill the crack.
+                <video loop autoplay src="media/audio/54_IMG_4571.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1289,21 +1302,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>55</sup></div>
-            <div class="row2"><sup>Bm</sup></div>
-            <div class="row3"><sup>00:15</sup></div>
+            <div class="row1">&nbsp;55</div>
+            <div class="row2">Bm</div>
+            <div class="row3">00:08</div>
             <div class="hoverVid">
-                flickering
-                <video loop autoplay src="media/audio/55_IMG_7565.mp4"></video>
+                Crack makes the sounds, and all the sound changes.
+                <video loop autoplay src="media/audio/55_IMG_3667.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1313,21 +1326,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>56</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:05</sup></div>
+            <div class="row1">&nbsp;56</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:11</div>
             <div class="hoverVid">
-                [Fade to black]
-                <video loop autoplay src="media/audio/56_IMG_8711.mp4"></video>
+                The moment clarity compels me to record the unaccountable time in transit.
+                <video loop autoplay src="media/audio/56_IMG_5264.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1337,21 +1350,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>57</sup></div>
-            <div class="row2"><sup>C#m</sup></div>
-            <div class="row3"><sup>01:58</sup></div>
+            <div class="row1">&nbsp;57</div>
+            <div class="row2">C#m</div>
+            <div class="row3">00:15</div>
             <div class="hoverVid">
-                I want to spend a lot of time meaninglessly. I read a water.
-                <video loop autoplay src="media/audio/57_L1060002.mp4"></video>
+                The courage and hope I gained while working.
+                <video loop autoplay src="media/audio/57_IMG_2440.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1361,21 +1374,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>58</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:17</sup></div>
+            <div class="row1">&nbsp;58</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:20</div>
             <div class="hoverVid">
-                The history of failure is not afraid.
-                <video loop autoplay src="media/audio/58_IMG_6915.mp4"></video>
+                Wouldn’t everything be a little bit better when I became a grandmother?
+                <video loop autoplay src="media/audio/58_IMG_8847.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1385,21 +1398,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>59</sup></div>
-            <div class="row2"><sup>Gm</sup></div>
-            <div class="row3"><sup>00:24</sup></div>
+            <div class="row1">&nbsp;59</div>
+            <div class="row2">Gm</div>
+            <div class="row3">00:23</div>
             <div class="hoverVid">
-                After finishing the printing supervision, I went for a drive to Bukak Skyway.
-                <video loop autoplay src="media/audio/59_IMG00914.mp4"></video>
+                September 2021 was like a pivotal moment for me.
+                <video loop autoplay src="media/audio/59_IMG_8539.MOV"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1409,21 +1422,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>60</sup></div>
-            <div class="row2"><sup>Am</sup></div>
-            <div class="row3"><sup>00:04</sup></div>
+            <div class="row1">&nbsp;60</div>
+            <div class="row2">Am</div>
+            <div class="row3">00:09</div>
             <div class="hoverVid">
-                The sound of a rainy day
-                <video loop autoplay src="media/audio/60_IMG_4474.mp4"></video>
+                14 hours and 20 minutes  11,059km  6,873miles (The flight time for a direct flight between Incheon International Airport and New York (JFK) is 14 hours and 20 minutes, and the distance between Seoul and New York is 11,059 km, 6,872 miles.)
+                <video loop autoplay src="media/audio/60_IMG_5903.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1433,21 +1446,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>61</sup></div>
-            <div class="row2"><sup>C#m</sup></div>
-            <div class="row3"><sup>00:11</sup></div>
+            <div class="row1">&nbsp;61</div>
+            <div class="row2">C#m</div>
+            <div class="row3">01:33</div>
             <div class="hoverVid">
-                Working is a comprehensive art.
-                <video loop autoplay src="media/audio/61_IMG_0654.mp4"></video>
+                I’m about to move to another city.
+                <video loop autoplay src="media/audio/61_IMG_7152.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1457,21 +1470,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>62</sup></div>
-            <div class="row2"><sup>G#m</sup></div>
-            <div class="row3"><sup>00:16</sup></div>
+            <div class="row1">&nbsp;62</div>
+            <div class="row2">Bm</div>
+            <div class="row3">00:15</div>
             <div class="hoverVid">
-                Being a spectator is also a good way.
-                <video loop autoplay src="media/audio/62_IMG_9825.mp4"></video>
+                flickering
+                <video loop autoplay src="media/audio/62_IMG_7565.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1481,21 +1494,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>63</sup></div>
-            <div class="row2"><sup>D#m</sup></div>
-            <div class="row3"><sup>00:11</sup></div>
+            <div class="row1">&nbsp;63</div>
+            <div class="row2">G</div>
+            <div class="row3">00:29</div>
             <div class="hoverVid">
-                Let’s start the second act and come.
-                <video loop autoplay src="media/audio/63_IMG_7378.mp4"></video>
+                UP
+                <video loop autoplay src="media/audio/63_IMG_4283.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1505,21 +1518,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>64</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:14</sup></div>
+            <div class="row1">&nbsp;64</div>
+            <div class="row2">D#m</div>
+            <div class="row3">00:11</div>
             <div class="hoverVid">
-                I remembered the poet Kim Geumwon, an early 19th-century woman poet. “A piece of sky spreading blue across the evening clouds // All things are new, as in the creation of the world // Realizing the way, how could I ask an errand boy to make tea // Moonlight scattering under the pines, went to draw clear spring water”
-                <video loop autoplay src="media/audio/64_IMG_7308.mp4"></video>
+                Let’s start the second act and come.
+                <video loop autoplay src="media/audio/64_IMG_5904.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1529,21 +1542,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>65</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:10</sup></div>
+            <div class="row1">&nbsp;65</div>
+            <div class="row2">G</div>
+            <div class="row3">00:10</div>
             <div class="hoverVid">
-                I want to be close to the land and marks.
-                <video loop autoplay src="media/audio/65_IMG_5904.mp4"></video>
+                I find myself writing passages of thought at the airports. People don't get used to being absent.
+                <video loop autoplay src="media/audio/65_IMG_6294.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1553,21 +1566,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>66</sup></div>
-            <div class="row2"><sup>G</sup></div>
-            <div class="row3"><sup>00:29</sup></div>
+            <div class="row1">&nbsp;66</div>
+            <div class="row2">G</div>
+            <div class="row3">00:16</div>
             <div class="hoverVid">
-                UP
-                <video loop autoplay src="media/audio/66_IMG_4283.mp4"></video>
+                Departure
+                <video loop autoplay src="media/audio/66_IMG_6237.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1577,21 +1590,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>67</sup></div>
-            <div class="row2"><sup>Gm</sup></div>
-            <div class="row3"><sup>00:09</sup></div>
+            <div class="row1">&nbsp;67</div>
+            <div class="row2">G#m</div>
+            <div class="row3">00:09</div>
             <div class="hoverVid">
-                On the way from Seoul to New York, time goes back to the day before.
-                <video loop autoplay src="media/audio/67_IMG_5903.mp4"></video>
+                [Please Keep your seatbelt fastened at all times]
+                <video loop autoplay src="media/audio/67_IMG_4814.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1601,21 +1614,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>68</sup></div>
-            <div class="row2"><sup>G#m</sup></div>
-            <div class="row3"><sup>00:09</sup></div>
+            <div class="row1">&nbsp;68</div>
+            <div class="row2">G#m</div>
+            <div class="row3">01:16</div>
             <div class="hoverVid">
-                [Please Keep your seatbelt fastened at all times]
-                <video loop autoplay src="media/audio/68_IMG_4814.mp4"></video>
+                At the push of a button, the spaceship actually launched people into space. (boosters firing)
+                <video loop autoplay src="media/audio/68_IMG_6362.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1625,21 +1638,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>69</sup></div>
-            <div class="row2"><sup>G#m</sup></div>
-            <div class="row3"><sup>01:01</sup></div>
+            <div class="row1">&nbsp;69</div>
+            <div class="row2">G#m</div>
+            <div class="row3">00:12</div>
             <div class="hoverVid">
-                The flight time for a direct flight between Incheon International Airport and New York (JFK) is 14 hours and 20 minutes, and the distance between Seoul and New York is 11,059 km, 6,872 miles.
-                <video loop autoplay src="media/audio/69_IMG_6361.mp4"></video>
+                On the way from Seoul to New York, time goes back to the day before.
+                <video loop autoplay src="media/audio/69_IMG_6404.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1649,21 +1662,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>70</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:14</sup></div>
+            <div class="row1">&nbsp;70</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:13</div>
             <div class="hoverVid">
-                A happy end, Set flight
-                <video loop autoplay src="media/audio/70_IMG_4820.mp4"></video>
+                Everything is disassembled.
+                <video loop autoplay src="media/audio/70_IMG_6385.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1673,21 +1686,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>71</sup></div>
-            <div class="row2"><sup>G</sup></div>
-            <div class="row3"><sup>00:18</sup></div>
+            <div class="row1">&nbsp;71</div>
+            <div class="row2">G</div>
+            <div class="row3">00:18</div>
             <div class="hoverVid">
-                I remember seeing another sky some years.
-                <video loop autoplay src="media/audio/71_IMG_4827.mp4"></video>
+                I had to stay in the incubator for some time.
+                <video loop autoplay src="media/audio/71_L1090605.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1697,21 +1710,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>72</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:21</sup></div>
+            <div class="row1">&nbsp;72</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:10</div>
             <div class="hoverVid">
-                As a child, I would spend countless hours looking up in the sky and wondering about the world that exists beyond the clouds.
-                <video loop autoplay src="media/audio/72_IMG_1301.mp4"></video>
+                There is a short dialogue.
+                <video loop autoplay src="media/audio/72_IMG_7469.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1721,21 +1734,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>73</sup></div>
-            <div class="row2"><sup>G</sup></div>
-            <div class="row3"><sup>00:10</sup></div>
+            <div class="row1">&nbsp;73</div>
+            <div class="row2">G</div>
+            <div class="row3">00:11</div>
             <div class="hoverVid">
-              I find myself writing passages of thought at the airports. People don't get used to being absent.
-                <video loop autoplay src="media/audio/73_IMG_6294.mp4"></video>
+                So we are going to sing a few songs, perfectly.
+                <video loop autoplay src="media/audio/73_IMG_7378.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1745,21 +1758,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>74</sup></div>
-            <div class="row2"><sup>A#m</sup></div>
-            <div class="row3"><sup>00:06</sup></div>
+            <div class="row1">&nbsp;74</div>
+            <div class="row2">G#m</div>
+            <div class="row3">00:12</div>
             <div class="hoverVid">
-                The moment clarity compels me to record the unaccountable time in transit.
-                <video loop autoplay src="media/audio/74_IMG_6934.mp4"></video>
+                Being a spectator is also a good way.
+                <video loop autoplay src="media/audio/74_IMG_6808.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1769,21 +1782,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>75</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:29</sup></div>
+            <div class="row1">&nbsp;75</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:14</div>
             <div class="hoverVid">
-                Being in a forest with no direction.
-                <video loop autoplay src="media/audio/75_IMG_0514.mp4"></video>
+                a movement there
+              <video loop autoplay src="media/audio/75_IMG_7592.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1793,21 +1806,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>76</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:08</sup></div>
+            <div class="row1">&nbsp;76</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:45</div>
             <div class="hoverVid">
-                It is not the final destination but the process of getting there.
-                <video loop autoplay src="media/audio/76_IMG_0508.mp4"></video>
+                a movement here  
+                <video loop autoplay src="media/audio/76_IMG_8542.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1817,21 +1830,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>77</sup></div>
-            <div class="row2"><sup>D</sup></div>
-            <div class="row3"><sup>00:45</sup></div>
+            <div class="row1">&nbsp;77</div>
+            <div class="row2">D</div>
+            <div class="row3">00:07</div>
             <div class="hoverVid">
-                There is a short dialogue.
-                <video loop autoplay src="media/audio/77_IMG_8542.mp4"></video>
+                Slow movement ...
+                <video loop autoplay src="media/audio/77_IMG_0414.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1841,21 +1854,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>78</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:20</sup></div>
+            <div class="row1">&nbsp;78</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:20</div>
             <div class="hoverVid">
-                So we are going to sing a few songs, perfectly.
-                <video loop autoplay src="media/audio/78_IMG_8847.mp4"></video>
+                A prayer for all the women who have yet to embark on their own journeys.
+                <video loop autoplay src="media/audio/78_IMG_1301.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1865,21 +1878,21 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>79</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:12</sup></div>
+            <div class="row1">&nbsp;79</div>
+            <div class="row2">Em</div>
+            <div class="row3">00:42</div>
             <div class="hoverVid">
-                I felt subtle hopes in calmness just as I do whenever I look up the blue sky.
-                <video loop autoplay src="media/audio/79_IMG_6806.mp4"></video>
+                Last trip before departure
+                <video loop autoplay src="media/audio/79_20220331.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
@@ -1889,337 +1902,26 @@
     <div class="content_group">
     <div class="index_entry" onclick="openAndClose_drawer(this)">
         <div class="container">
-            <div class="row1"><sup>80</sup></div>
-            <div class="row2"><sup>G#m</sup></div>
-            <div class="row3"><sup>00:33</sup></div>
+            <div class="row1">&nbsp;80</div>
+            <div class="row2">G#m</div>
+            <div class="row3">00:09</div>
             <div class="hoverVid">
-                Here is my piece of sky.
-                <video loop autoplay src="media/audio/80_IMG_3194.mp4"></video>
+                Thank you for reading this sore
+                <video loop autoplay src="media/audio/80_IMG_5395.mp4"></video>
             </div>
             <div class="row4"></div>
         </div>
     </div>
     <div class="index_drawer closed">
         <div class="index_content">
-            <div class="row1"></div>
+            <div class="row1">&nbsp;</div>
             <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
+            <div class="row3">It was recorded on iPhone at 5:22 PM on January 10, 2022. A sound having a size of 822,301,435 bytes in the stereo channel.</div>
             <div class="row4"></div>
         </div>
     </div>
     </div>
 
-    <!-- 81 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>81</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:14</sup></div>
-            <div class="hoverVid">
-                Silent.
-                <video loop autoplay src="media/audio/81_IMG_7592.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 82 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>82</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:16</sup></div>
-            <div class="hoverVid">
-                When I arrived, it was a hot summer day here.
-                <video loop autoplay src="media/audio/82_IMG_6912.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 83 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>83</sup></div>
-            <div class="row2"><sup>Fm</sup></div>
-            <div class="row3"><sup>00:20</sup></div>
-            <div class="hoverVid">
-                The streets are full of strange sounds.
-                <video loop autoplay src="media/audio/83_IMG_7424.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 84 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>84</sup></div>
-            <div class="row2"><sup>Dm</sup></div>
-            <div class="row3"><sup>00:07</sup></div>
-            <div class="hoverVid">
-                Verizon passes.
-                <video loop autoplay src="media/audio/84_IMG_4275.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 85 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>85</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:13</sup></div>
-            <div class="hoverVid">
-                I used to hate are slowly disappearing from my mind. Live in a dream, waits at the window.
-                <video loop autoplay src="media/audio/85_IMG_7479.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 86 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>86</sup></div>
-            <div class="row2"><sup>E</sup></div>
-            <div class="row3"><sup>00:32</sup></div>
-            <div class="hoverVid">
-                I am learning and acquiring new things.
-                <video loop autoplay src="media/audio/86_IMG_7447.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 87 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>87</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:15</sup></div>
-            <div class="hoverVid">
-                People, shapes, letters, weather, and the button sounds different.
-                <video loop autoplay src="media/audio/87_IMG_3207.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 88 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>88</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:23</sup></div>
-            <div class="hoverVid">
-                Goodbye now to my beloved young days.
-                <video loop autoplay src="media/audio/88_IMG_8539.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 89 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>89</sup></div>
-            <div class="row2"><sup>G</sup></div>
-            <div class="row3"><sup>01:05</sup></div>
-            <div class="hoverVid">
-                The sound I used to hate are slowly disappearing from my mind.
-                <video loop autoplay src="media/audio/89_IMG_5399.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 90 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>90</sup></div>
-            <div class="row2"><sup>G#m</sup></div>
-            <div class="row3"><sup>00:13</sup></div>
-            <div class="hoverVid">
-                All the sound changes, like water becomes snow or rain.
-                <video loop autoplay src="media/audio/90_IMG_9865.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 91 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>91</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:08</sup></div>
-            <div class="hoverVid">
-                The courage and hope I gained while working.
-                <video loop autoplay src="media/audio/91_IMG_5829.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 92 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>92</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:11</sup></div>
-            <div class="hoverVid">
-                A prayer for all the women who have yet to embark on their own journeys.
-                <video loop autoplay src="media/audio/92_IMG_0924.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 93 -->
-    <div class="content_group">
-    <div class="index_entry" onclick="openAndClose_drawer(this)">
-        <div class="container">
-            <div class="row1"><sup>93</sup></div>
-            <div class="row2"><sup>Em</sup></div>
-            <div class="row3"><sup>00:09</sup></div>
-            <div class="hoverVid">
-                Wouldn't everything be a little bit better when I became a grandmother?
-                <video loop autoplay src="media/audio/93_IMG_5395.mp4"></video>
-            </div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    <div class="index_drawer closed">
-        <div class="index_content">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3">It was recorded for 13 seconds on iPhone 7 at 2:07 PM on Thursday, January 22, 2017. A sound having a size of 24,542,343 bytes in the mono channel 44100 herz.</div>
-            <div class="row4"></div>
-        </div>
-    </div>
-    </div>
 
 
 </div>
