@@ -233,12 +233,12 @@ video {
     position: fixed;
     z-index: 100000;
     width: 25%;
-    background: #2151ff;
+    background: #000000;
     right: 10px;
     top: 20vh;
     padding: 0.5vh;
     box-shadow: 0.5vh 0.5vh 1vh #000000bd;}
-
+/*#2151ff*/
 .title {
     width: 100%;
     font-family: "AS-Condensed-90", sans-serif;
