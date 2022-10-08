@@ -1,15 +1,8 @@
 @font-face {
-  font-family: "AS-Condensed-90";
-  src:url('AS-Condensed-90.woff2') format("woff2"),url('AS-Condensed-90.woff') format("woff");
-  font-weight:500;
-  font-style:normal;
-}
-
-@font-face {
-font-family: "AS-Condensed-130";
-src:url('AS-Condensed-130.woff2') format("woff2"),url('AS-Condensed-90.woff') format("woff");
-font-weight:500;
-font-style:normal;
+    font-family: "AUTHENTICSans-Condensed-90";
+    src:url('AUTHENTICSans-Condensed-90.woff') format("woff");
+    font-weight:500;
+    font-style:normal;
 }
 
 * {
@@ -30,42 +23,41 @@ body {
     display: flex;
     position: fixed;
     justify-content: space-between;
-    height: 2.8vh;
+    height: 4vh;
     background-color: #000000;
     list-style-type: none;
     text-align: center;
-    padding: 1px;
     z-index: 999;
 }
 
 .title_wrap li {
-  display: inline-block;
-  font-size: 2.1vh;
-  padding: 1px;
+    display: inline-block;
+    font-size: 3vh;
+    line-height: 4vh;
+    padding-left: 1vw;
 }
 
 a:link {
-  display: inline;
-  z-index: 100000;
-  color: #FFFFFF;
-  font-family: "AS-Condensed-130";
-  font-size: 2.1vh;
-  line-height: 0vh;
-  letter-spacing: 0vh;
-  text-decoration: none;
-  z-index: 100000;
+    display: inline;
+    z-index: 100000;
+    color: #FFFFFF;
+    font-family: "AUTHENTICSans-Condensed-90";
+    font-size: 3vh;
+    text-decoration: none;
+    z-index: 100000;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: none;
+    color: black;
 }
 
 a:active {
-  color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 a:visited {
-  color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .button {
@@ -75,17 +67,16 @@ a:visited {
     background-color: #000000;
     border: none;
     color: #FFFFFF;
-    font-family: "AS-Condensed-130";
-    font-size: 2.1vh;
+    font-family: "AUTHENTICSans-Condensed-90";
+    padding: 0.5vh;
+    font-size: 3vh;
     line-height: 1vh;
-    letter-spacing: 0vh;
-    text-decoration: none;
     z-index: 100000;
 }
 
 .button:hover {
-    text-decoration: underline;
-    color: #FFFFFF;
+    text-decoration: none;
+    color: black;
 }
 
 .button:active {
@@ -113,13 +104,13 @@ a:visited {
     display: grid;
     grid-template-columns: 16.6vw 16.6vw 16.6vw 49.8vw;
     grid-gap: 0px;
-    margin-left: 0vw;
-    margin-right: 0vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
     margin-bottom: 0vh; /*new*/
     color: #000000;
-    font-family: "AS-Condensed-90";
-    font-size: 2.1vh;
-    line-height: 2.8vh;
+    font-family: "AUTHENTICSans-Condensed-90";
+    font-size: 3vh;
+    line-height: 4vh;
     letter-spacing: 0vh;
     text-align: left;
 }
@@ -129,13 +120,24 @@ a:visited {
 }
 
 .container:hover {
-    color: #ffffff;
-    text-decoration: #ffffff;
-    background-color: #2151ff;
+    /* background-color: black; */
+    color: white;
+    text-shadow:
+      -2.5px -2.5px 0 #000,
+       0   -2.5px 0 #000,
+       2.5px -2.5px 0 #000,
+       2.5px  0   0 #000,
+       2.5px  2.5px 0 #000,
+       0    2.5px 0 #000,
+      -2.5px  2.5px 0 #000,
+      -2.5px  0   0 #000;
+    /* background-color: #00000020; */
 }
 
+/* background-color: #2151ff; */
+
 #index {
-    margin-top: 2.8vh;
+    margin-top: 5vh;
     margin-bottom: 0vh;
 }
 
@@ -163,13 +165,13 @@ a:visited {
     display: grid;
     grid-template-columns: 0% 0% 100% 0%;
     grid-gap: 0px;
+    padding-left: 1vw;
     margin-left: 0vw;
     margin-right: 0vw;
     margin-bottom: 0vh; /*new*/
-    font-family: "AS-Condensed-90";
-    font-size: 2.1vh;
-    line-height: 2.8vh;
-    letter-spacing: 0vh;
+    font-family: "AUTHENTICSans-Condensed-90";
+    font-size: 3vh;
+    line-height: 4vh;
     color: #ffffff;
     background-color: #000000;
     overflow-x: hidden;
@@ -232,35 +234,35 @@ video {
 #intro {
     position: fixed;
     z-index: 100000;
-    width: 25%;
-    background: #000000;
-    right: 10px;
-    top: 20vh;
-    padding: 0.5vh;
-    box-shadow: 0.5vh 0.5vh 1vh #000000bd;}
-/*#2151ff*/
+    width: 33.2vw;
+    background: #000000ea;
+    left: 49.8vw;
+    top: 16.6vh;
+    padding: 1.5vh;
+    border-radius: 10px;
+    box-shadow: 0.5vh 0.5vh 0.5vh #000000bd;
+}
+/*#2151ff, -16.6*/
+
 .title {
     width: 100%;
-    font-family: "AS-Condensed-90", sans-serif;
+    font-family: "AUTHENTICSans-Condensed-90", sans-serif;
     color: #ffffff;
-    font-size: 2vh;
-    line-height: 2.5vh;
-    letter-spacing: 0vh;
+    font-size: 3vh;
+    line-height: 4vh;
     visibility: visible;
 }
 
 .intro div, span {
     text-decoration: none !important;
-    font-family: "AS-Condensed-90", sans-serif;
     margin: 0;
     color: black !important;
-    letter-spacing: 0vh;
 }
 
 .x_button {
     color: #ffffff;
-    font-size: 2.1vh;
-    line-height: 2.8vh;
+    font-size: 3vh;
+    line-height: 4vh;
     right: 0.5vw;
     top: 0vh;
     border-radius: 0vh;
@@ -270,86 +272,80 @@ video {
   /*background-image: url(../pics/x_img.png);*/
 }
 
+/*mobile*/
 
 @media (min-width: 300px) and (max-width: 700px) {
   body {
     overflow-y: hidden;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-  }
+}
 
-  .title_wrap {
+.title_wrap {
     width: 100vw;
     display: flex;
     position: fixed;
     justify-content: space-between;
-    height: 2.2vh;
+    height: 4vh;
     background-color: #000000;
     list-style-type: none;
-    text-align: center;
-    padding: 1px;
-    z-index: 999;
-  }
+    align-items: center;
+}
 
-  .title_wrap li {
+.title_wrap li {
     display: inline-block;
-    font-size: 1.7vh;
-    padding: 1px;
-  }
+    font-size: 3vh;
+    padding: 0.5vh;
+}
 
-  a:link {
-    display: inline;
+a:link {
+    display: inline-block;
     z-index: 100000;
     color: #FFFFFF;
-    font-family: "AS-Condensed-130";
-    font-size: 1.7vh;
-    line-height: 2.2vh;
-    letter-spacing: 0vh;
+    font-family: "AUTHENTICSans-Condensed-90";
+    font-size: 3vh;
+    line-height: 4vh;
     text-decoration: none;
     z-index: 100000;
-  }
+}
 
-  a:hover {
-    text-decoration: underline;
-  }
+a:hover {
+    text-decoration: none;
+}
 
-  a:active {
+a:active {
     color: #FFFFFF;
-  }
+}
 
-  a:visited {
+a:visited {
     color: #FFFFFF;
-  }
+}
 
-  .button {
+.button {
     display: inline;
     text-align: center;
     cursor: pointer;
     background-color: #000000;
     border: none;
     color: #FFFFFF;
-    font-family: "AS-Condensed-130";
-    font-size: 1.7vh;
-    line-height: 2.2vh;
-    letter-spacing: 0vh;
-    text-decoration: none;
+    font-size: 3vh;
     z-index: 100000;
-  }
+}
 
-  .button:hover {
-    text-decoration: underline;
+.button:hover {
+    text-decoration: none;
     color: #FFFFFF;
-  }
+}
 
-  .button:active {
+.button:active {
     color: #FFFFFF;
-  }
+}
 
-  .button:visited {
+.button:visited {
     color: #FFFFFF;
-  }
+}
 
-  .content {
+.content {
     width: 100%;
     display: inline-block;
     height: 100vh;
@@ -359,9 +355,9 @@ video {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-  }
+}
 
-  .container {
+.container {
     width: 100vw;
     display: grid;
     grid-template-columns: 16.6vw 16.6vw 16.6vw 49.8vw;
@@ -370,79 +366,71 @@ video {
     margin-right: 0vh;
     margin-bottom: 0vh; /*new*/
     color: #000000;
-    font-family: "AS-Condensed-90";
-    font-size: 1.7vh;
-    line-height: 2.2vh;
-    letter-spacing: 0vh;
+    font-family: "AUTHENTICSans-Condensed-90";
+    font-size: 3vh;
+    line-height: 4vh;
     text-align: left;
-  }
+}
 
-  .container > div {
-    font-size: 1.7vh;
-    line-height: 2.2vh;
-    letter-spacing: 0vh;
+.container > div {
+    font-size: 3vh;
+    line-height: 4vh;
     text-align: left;
-  }
+}
 
-  #index {
-    margin-top: 2.2vh;
+#index {
+    margin-top: 5vh;
     margin-bottom: 0vh;
-  }
+}
 
-  #index {
-    margin-top: 2.2vh;
-    margin-bottom: 0vh;
-  }
-
-  .main .index_entry:hover {
+.main .index_entry:hover {
     cursor: pointer;
-  }
+}
 
-  .index_drawer {
+.index_drawer {
     color: #000000;
     overflow-y: hidden;
     transition-property: all;
     transition-duration: .3s;
     height: 100%
-  }
+}
 
-  .index_drawer a {
+.index_drawer a {
     color: #000000;
-  }
+}
 
-  .index_drawer a:hover {
+.index_drawer a:hover {
     color: #000000;
-  }
+}
  
-  .index_drawer .index_content {
+.index_drawer .index_content {
     display: grid;
     grid-template-columns: 0% 0% 100% 0%;
     grid-gap: 0px;
     margin-left: 0vw;
     margin-right: 0vw;
     margin-bottom: 0vh; /*new*/
-    font-family: "AS-Condensed-90";
-    font-size: 1.7vh;
-    line-height: 2.2vh;
-    letter-spacing: 0vh;
+    font-family: "AUTHENTICSans-Condensed-90";
+    font-size: 3vh;
+    line-height: 4vh;
     color: #ffffff;
     background-color: #000000;
     overflow-x: hidden;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-  }
+}
 
-  .index_drawer.closed {
+.index_drawer.closed {
     max-height: 0;
-  }
+}
 
   /* video play */
-  .hoverVid  {
+.hoverVid  {
     position: relative;
-  }
+}
 
-  .hoverVid video {
+.hoverVid video {
     position: fixed;
     object-fit: cover;
     width: 100vw;
@@ -456,56 +444,54 @@ video {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-  }
+}
 
-  .hoverVid:hover video {
+.hoverVid:hover video {
     /* on hover, animate into view */
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0px);
     mix-blend-mode: normal;
-  }
+}
 
-  video {
+video {
     width: 100%;
     height: auto;
     position: relative;
     border-radius: 0px;
-  }
+}
 
-  #intro {
+#intro {
     position: fixed;
     z-index: 100000;
     width: 50%;
-    background: #000000;
+    background: #000000ea;
     right: 10px;
     top: 20vh;
     padding: 0.5vh;
-    box-shadow: 0.5vh 0.5vh 1vh #000000bd;}
+    box-shadow: 0.5vh 0.5vh 1vh #000000bd;
+}
 
-  .title {
+.title {
     width: 100%;
-    font-family: "AS-Condensed-130", sans-serif;
+    font-family: "AUTHENTICSans-Condensed-90", sans-serif;
     color: #ffffff;
-    font-size: 1.7vh;
-    line-height: 2.2vh;
-    letter-spacing: 0vh;
+    font-size: 3vh;
+    line-height: 4vh;
     visibility: visible;
-  }
+}
 
-  .intro div, span {
+.intro div, span {
     text-decoration: none !important;
-    font-family: "AS-Condensed-130", sans-serif;
     margin: 0;
     color: black !important;
-    letter-spacing: 0vh;
-  }
+}
 
-  .x_button {
+.x_button {
     color: #ffffff;
-    font-size: 1.7vh;
-    line-height: 2.2vh;
+    font-size: 3vh;
+    line-height: 4vh;
     right: 0.5vw;
     top: 0vh;
     border-radius: 0vh;
@@ -513,18 +499,4 @@ video {
     position: absolute;
     cursor: pointer;
     /*background-image: url(../pics/x_img.png);*/
-  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
