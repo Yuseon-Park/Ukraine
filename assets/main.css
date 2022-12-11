@@ -11,6 +11,18 @@
     margin: 0;
     padding: 0;
 }
+  
+text {
+    fill: none;
+    stroke: black;
+    stroke-width: .5px;
+    stroke-linejoin: round;
+    animation: 5s pulsate infinite;
+}
+  
+@keyframes pulsate {
+    50%{ stroke-width: 10px }
+}
 
 body {
     overflow-y: hidden;
@@ -120,21 +132,19 @@ a:visited {
 }
 
 .container:hover {
-    /* background-color: black; */
     color: white;
-    text-shadow:
-      -2.5px -2.5px 0 #000,
-       0   -2.5px 0 #000,
-       2.5px -2.5px 0 #000,
-       2.5px  0   0 #000,
-       2.5px  2.5px 0 #000,
-       0    2.5px 0 #000,
-      -2.5px  2.5px 0 #000,
-      -2.5px  0   0 #000;
+    background-color: #2151ff;
     /* background-color: #00000020; */
 }
 
-/* background-color: #2151ff; */
+/* -2.5px -2.5px 0 #000,
+ 0   -2.5px 0 #000,
+ 2.5px -2.5px 0 #000,
+ 2.5px  0   0 #000,
+ 2.5px  2.5px 0 #000,
+ 0    2.5px 0 #000,
+-2.5px  2.5px 0 #000,
+-2.5px  0   0 #000; */
 
 #index {
     margin-top: 5vh;
@@ -237,7 +247,7 @@ video {
     width: 33.2vw;
     background: #000000ea;
     left: 49.8vw;
-    top: 16.6vh;
+    bottom: 16.6vh;
     padding: 1.5vh;
     border-radius: 10px;
     box-shadow: 0.5vh 0.5vh 0.5vh #000000bd;
@@ -263,8 +273,8 @@ video {
     color: #ffffff;
     font-size: 3vh;
     line-height: 4vh;
-    right: 0.5vw;
-    top: 0vh;
+    right: 1vw;
+    top: 1vh;
     border-radius: 0vh;
     display: block;
     position: absolute;
@@ -492,11 +502,10 @@ video {
     color: #ffffff;
     font-size: 3vh;
     line-height: 4vh;
-    right: 0.5vw;
-    top: 0vh;
+    right: 1vw;
+    top: 1vh;
     border-radius: 0vh;
     display: block;
     position: absolute;
     cursor: pointer;
-    /*background-image: url(../pics/x_img.png);*/
-}
+}}
